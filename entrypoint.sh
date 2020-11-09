@@ -49,4 +49,4 @@ else
 fi
 
 # Upload source to storage
-az storage blob upload-batch -s ${SOURCE_DIR} -d \$web --account-name ${AZURE_STORAGE_ACCOUNT_NAME}
+az storage blob sync -s ${SOURCE_DIR} -c \$web --account-name ${AZURE_STORAGE_ACCOUNT_NAME}
